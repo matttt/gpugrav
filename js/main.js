@@ -4,6 +4,8 @@ function setup() {
 
   universe = new Universe();
 
+  frameRate(60)
+
   // console.log(universe.toMatrix())
 }
 

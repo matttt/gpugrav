@@ -1,7 +1,7 @@
 
 // const N_ROWS = 32
 // const N_COLS = 32
-const N_ROIDS = 10000
+const N_ROIDS = 5000
 
 class Asteroid {
   constructor(x, y, vx, vy, m, r) {
@@ -50,10 +50,10 @@ class Asteroid {
     // moving quickly, we see a  line showing how 
     // far it moved that frame 
 
-    point(this.pos.x, this.pos.y)
+    // point(this.pos.x, this.pos.y)
 
-    // line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
-    // this.prevPos = this.pos.copy()
+    line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
+    this.prevPos = this.pos.copy()
   }
 }
 
