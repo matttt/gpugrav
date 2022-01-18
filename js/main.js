@@ -8,6 +8,7 @@ function setup() {
 }
 
 function draw() {
+  console.log(frameRate())
   translate(width/2, height/2)
   background(0)
   universe.computeGravityFrame()
