@@ -1,7 +1,7 @@
 
 // const N_ROWS = 32
 // const N_COLS = 32
-const N_ROIDS = 100
+const N_ROIDS = 1000
 
 class Asteroid {
   constructor(x, y, vx, vy, m, r) {
@@ -162,13 +162,11 @@ class Universe {
 
 const gpu = new GPU();
 const gravityComputer = gpu.createKernel(function (asteroids) {
-  const G = 6.67 * 0.00005
+  const G = 6.67 * 0.00003
 
   const asteroid = asteroids[this.thread.x];
-  // const [x,y,m] = asteroid
-  const x = asteroid[0]
-  const y = asteroid[1]
-  const m = asteroid[2]
+  const [x,y,m] = asteroid
+
 
   const d = Math.sqrt(x * x + y * y); // distance from 0, 0 where sun is
 
