@@ -1,7 +1,7 @@
 
 // const N_ROWS = 32
 // const N_COLS = 32
-const N_ROIDS = 5000
+const N_ROIDS = 100
 
 class Asteroid {
   constructor(x, y, vx, vy, m, r) {
